@@ -25,7 +25,9 @@ public class UnknownMessage extends EmptyMessage {
     private String name;
 
     public UnknownMessage(NetworkParameters params, String name, byte[] payloadBytes) throws ProtocolException {
-        super(params, payloadBytes, 0);
+        super(params);
+        this.payload = payloadBytes;
+        this.length = payloadBytes.length;
         this.name = name;
     }
 
