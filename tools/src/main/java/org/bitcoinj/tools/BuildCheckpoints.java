@@ -57,7 +57,7 @@ public class BuildCheckpoints {
     private static NetworkParameters params;
 
     public static void main(String[] args) throws Exception {
-        BriefLogFormatter.initWithSilentBitcoinJ();
+        BriefLogFormatter.init();
 
         OptionParser parser = new OptionParser();
         parser.accepts("help");
